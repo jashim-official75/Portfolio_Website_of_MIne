@@ -1,0 +1,199 @@
+@media(max-width:991px) {
+
+    header,
+    header.sticky {
+        padding: 30px 20px;
+    }
+
+    .banner h2 span {
+        font-size: 1em;
+    }
+.content
+{
+    flex-direction: column;
+    text-align: justify;
+}
+.w50 {
+    min-width: 100%;
+}
+.testomonials .content .testomonialsBx
+{
+    width: 100%;
+    margin-bottom: 25px;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+.btn {
+	
+	padding: 12px 20px;
+	text-decoration: none;
+	font-size: 0.8em;
+	
+}
+
+.contactInfo {
+	min-width: 100%;
+
+    
+}
+.formBx form h3 {
+	text-align: center;
+}
+.formBx {
+	width: 100%;
+	
+}
+.formBx form input[type="submit"] {
+	
+	min-width: 150px;
+    margin: 0 auto;
+	
+}
+.work .content .workBx {
+	position: relative;
+	width: 50%;
+	min-height: 300px;
+	margin: 20px;
+}
+header ul li a {
+	font-size: 0.8em;
+	margin: 0 8px;
+	
+}
+header .logo {
+	font-size: 1.5em;
+	
+}
+}
+
+
+@media(max-width:768px)
+{
+ header ul {
+	
+	display: none;
+	
+}
+.services .content .servicesBx {
+	
+	max-width: 100%;
+	
+}
+.services .content .servicesBx img {
+	width: 50px;
+
+}
+.services .content .servicesBx p ,.work .content .workBx p {
+	padding: 3px;
+    font-size: 0.8em;
+    text-align: center;
+}
+.services .content .servicesBx h2 ,.work .content .workBx h2 {
+	padding: 3px;
+    font-size: 1.2em;
+}
+.services .content .servicesBx {
+	padding: 20px 30px;
+	max-width: 100%;
+}
+.heading {
+	font-size: 18px;
+	text-align: center;
+	color: #111;
+}
+.work .content .workBx {
+	position: relative;
+	width: 100%;
+	min-height: 300px;
+	margin: 20px;
+}
+.btn {
+	padding: 12px 20px;
+	text-decoration: none;
+	font-size: 0.6em !important;
+}
+.contactInfoBx .box .text {
+	font-size: 12px;
+	font-weight: 300;
+}
+.contactInfoBx .box .text h3 {
+	font-weight: 500;
+	color: #2196f3;
+	margin-bottom: 0;
+	font-size: 20px;
+}
+.copyright h2 {
+	font-size: 0.8em;
+	font-weight: 500;
+}
+
+.banner h2, .banner h3 {
+	font-size: 1.5em;
+	font-weight: 500;
+	color: #fff;
+	line-height: 1.5em;
+}
+.contentBx h3 {
+	font-size: 18px;
+	margin-bottom: 6px;
+}
+.testomonials .content .testomonialsBx p {
+	font-size: 0.8em;
+	margin-bottom: 10px;
+}
+.testomonials .content .testomonialsBx {
+	width: 100%;
+	
+	background: #2196f3;
+	color: #fff;
+	padding: 40px 20px;
+	position: relative;
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+}
+.testomonials .content .testomonialsBx h3 {
+	font-size: 1em;
+	
+}
+.left i, .right i {
+	font-size: 18px;
+}
+
+.testomonials .content .testomonialsBx::before {
+	width: 100px;
+	height: 100px;
+	border-right: 5px solid #222;
+	border-bottom: 5px solid #222;
+}
+.testomonials .content .testomonialsBx::after {
+
+	width: 100px;
+	height: 100px;
+	border-top: 5px solid #222;
+	border-left: 5px solid #222;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+	width: 40px;
+	height: 40px;
+
+}
+ .about {
+	padding: 20px;
+	width: 100%;
+	min-height: 100vh;
+}
+.services,.work,.testomonials ,.contact  {
+	
+	padding:100px 20px;
+}
+.work .content .workBx {
+
+	margin: 10px 0;
+}
+
+.work .content .workBx .work-content {
+padding: 40px;
+}
+
+}

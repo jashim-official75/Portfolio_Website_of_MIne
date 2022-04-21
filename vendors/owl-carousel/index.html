@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Carousel Example</title>
+    <link rel="stylesheet" href="../vendors/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../vendors/owl-carousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <header class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <div class="logo">
+                        <a href="#">Ahmmed Shakib</a>
+                    </div>
+                </div>
+                <div class="col-xl-9">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="slider-area">
+       <div class="owl-carousel owl-theme">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus vitae facere dolor quas ex, tenetur, recusandae corrupti nesciunt eius inventore, dolorem laboriosam tempore ad consequatur deserunt quia amet vel aliquid culpa asperiores exercitationem sequi? Quo architecto eos sequi qui ad nam, aliquid neque autem magni dicta delectus expedita vel porro corporis laudantium doloribus repellat ipsam quibusdam esse itaque. Ad labore laudantium blanditiis tempora, sunt molestias inventore officiis sapiente possimus at cum laboriosam aspernatur atque quia minus eius suscipit sint ducimus maxime? Consequatur magni doloribus, autem, eveniet nihil ab porro placeat sapiente, nam numquam animi suscipit quaerat? Dolorem maxime architecto quod!</p>
+                </div>
+            </div>
+        </div>
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus vitae facere dolor quas ex, tenetur, recusandae corrupti nesciunt eius inventore, dolorem laboriosam tempore ad consequatur deserunt quia amet vel aliquid culpa asperiores exercitationem sequi? Quo architecto eos sequi qui ad nam, aliquid neque autem magni dicta delectus expedita vel porro corporis laudantium doloribus repellat ipsam quibusdam esse itaque. Ad labore laudantium blanditiis tempora, sunt molestias inventore officiis sapiente possimus at cum laboriosam aspernatur atque quia minus eius suscipit sint ducimus maxime? Consequatur magni doloribus, autem, eveniet nihil ab porro placeat sapiente, nam numquam animi suscipit quaerat? Dolorem maxime architecto quod!</p>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+    
+
+
+
+
+<script src="../vendors/jquery/jquery-slim.min.js"></script>
+<script src="../vendors/popper/popper.min.js"></script>
+<script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="../vendors/owl-carousel/js/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+ var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:1,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    nav:true,
+    responsiveClass:true,
+    smartSpeed:1000,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:true,
+            loop:false
+        }
+    }
+});
+
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+
+})
+
+  
+</script>
+</body>
+</html>
